@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Try It Yourself</title>
+</head>
+<body>
+  <p id="sample"> Hello World! </p>
+  <button onclick="changeContent();"> Change Content </button>
+  
+  <script type="text/javascript">
+    var isLorem = false; // Initialize a variable to track the content state
+
+    function changeContent() {
+      var sample = document.getElementById("sample");
+
+      if (isLorem) {
+        sample.innerHTML = "Hello World!";
+      } else {
+        sample.innerHTML = "I am excited";
+      }
+
+      isLorem = !isLorem; // Toggle the state
+    }
+  </script>
+</body>
+</html>
